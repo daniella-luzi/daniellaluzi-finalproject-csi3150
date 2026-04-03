@@ -1,0 +1,396 @@
+/*body and header styles*/
+body{
+    background-color: #FFCCEC;
+}
+
+.header{
+    flex-shrink: 0;
+    padding: 1rem;
+    background-color: #E8A8FF;
+    padding: 10px;
+}
+
+.header h1{
+    text-align: center;
+    color: #330439;
+    font-family: sans-serif, Arial;
+}
+
+hr{
+    border: none;
+    border-top: 2px solid #330439;
+}
+
+/*clock styles*/
+.clockContainer{
+    display: flex;
+    padding: 10px 0;
+    flex-direction: column;
+    width: fit-content;
+    height: 2rem;
+
+}
+
+.clock{
+    color: #330439;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clockAndToggle{
+    display: flex;
+    flex-direction: row; 
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+/*news styles*/
+/*article style was inspired by w3schools https://www.w3schools.com/howto/howto_css_product_card.asp*/
+.newsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: #FFCCEC;
+    width: fit-content;
+    margin: auto;
+}
+
+.articleCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  color: #330439;
+  border-radius: 3px;
+}
+
+.articleCard img {
+  max-width: 300px;
+  border-radius: 3px;
+}
+
+.newsSearch{
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.5rem;
+    border-color: #CBBDFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.newsSearchDiv{
+    display: flex;
+    flex-direction: row; 
+    gap: 1rem;
+    justify-content: center;
+}
+
+.noArticles{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: arial;
+    color: #330439;
+    justify-content: center;
+    margin: auto;
+}
+
+/*weather styles*/
+.weatherSearch{
+    border-radius: 5px;
+    border-color: #CBBDFF;
+    padding: 0.5rem;
+}
+
+.weatherSearchBtn{
+    background-color: #B8F1FF;
+    color: #330439;
+    border-radius: 5px;
+    width: 6rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-color: purple;
+}
+
+.weatherSearchandButton{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    gap: 1rem;
+}
+
+.weather{
+    width: fit-content;
+    text-align: center;
+    justify-content: right;
+    margin: auto;
+    font-family: arial;
+    font-size: 1.5rem;
+}
+
+.checkOutWeather{
+    text-align: center;
+    justify-content: right;
+    margin: auto;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-family: arial;
+    color: #330439;
+    margin-top: 1.5rem;
+}
+
+/*to do list styles*/
+
+.todolistTitle{
+    font-family: arial;
+    color: #330439;
+    justify-content: center;
+    text-align: center;
+}
+
+.noTasks{
+    font-family: arial;
+    color: #330439;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.todoInput{
+    border-radius: 5px;
+    border-color: #CBBDFF;
+    padding: 0.5rem;
+    margin-left: 2rem;
+}
+
+.todoButton{
+    background-color: #B8F1FF;
+    color: #330439;
+    border-radius: 5px;
+    width: 6rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-color: purple;
+    margin-left: 1rem;
+    padding: 0.5rem;
+}
+
+.searchInput{
+    border-radius: 5px;
+    border-color: #CBBDFF;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-left: 6rem;
+}
+
+.taskItem{
+    font-family: arial;
+    color: #330439;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+
+.completeBtn{
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    border-color: green;
+    background-color: lightgreen;
+    width: fit-content;
+    text-align: center;
+    padding: 0.01rem;
+    border-radius: 3px;
+}
+
+/*attempting to make it fit on desktop screens possibly*/
+@media (min-width: 768px) {
+    .newsContainer{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: right;
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    .newsSearchDiv{
+        display: flex;
+        flex-direction: row; 
+        gap: 1rem;
+        justify-content: right;
+        margin-right: 15rem;
+        margin-top: 1rem;
+    }
+
+    .weatherSearchandButton{
+        display: flex;
+        flex-direction: row; 
+        justify-content: left;
+    }
+
+    .checkOutWeather{
+        width: fit-content;
+        text-align: center;
+        justify-content: left;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .weather{
+        width: fit-content;
+        text-align: center;
+        justify-content: center;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .currentWeather{
+        text-align: center;
+        justify-content: center;
+        margin-left: 33rem;
+        margin-right: auto;
+    }
+
+    .clock{
+        font-size: 3rem;
+    }
+
+    .clockContainer{
+        height: 3.5rem;
+    }
+
+    .header h1{
+        font-size: 3.5rem;
+    }
+
+    .todolistTitle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .todosearchDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5rem;
+    }
+
+    .todoInput{
+        margin-left: 37.5rem;
+    }
+
+    .weatherSearchandButton{
+        display: flex;
+        flex-direction: row; 
+        justify-content: left;
+        margin-left: 42rem;
+    }
+
+    .checkOutWeather{
+        width: fit-content;
+        text-align: center;
+        justify-content: left;
+        margin-left: 37rem;
+    }
+
+    .newsSearchDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: -1.5rem;
+    }
+
+    .newsContainer{
+        margin-right: 25rem;
+    }
+
+}
+/*toggle button styles*/
+.toggleBtn{
+    border-radius: 10px;
+    width: fit-content;
+    font-size: 2rem;
+    text-align: center;
+    padding: 5px;
+    background-color: navy;
+    border-color: black;
+
+}
+
+/*dark mode classes*/
+.darkMode{
+    background-color: #660A49;
+    color: #F2B5D7;
+}
+
+.darkMode hr{
+    border: none;
+    border-top: 2px solid #E8A8FF;
+}
+
+.darkMode .articleCard{
+    background-color: black;
+    color: #E8A8FF;
+}
+
+.darkMode .newsContainer{
+    background-color: #660A49;
+}
+
+.darkMode .weatherSearch, .darkMode .searchInput, .darkMode .todoInput, .darkMode .newsSearch{
+    background-color: black;
+    color: white;
+}
+
+.darkMode .weatherSearchBtn, .darkMode .todoButton{
+    background-color: #330439;
+    color: #B8F1FF;
+}
+
+.darkMode .header h1{
+    color: #E8A8FF;
+}
+
+.darkMode .header{
+    background-color: #330439;
+}
+
+.darkMode .clock{
+    color: #E8A8FF;
+}
+
+.darkMode .toggleBtn{
+    background-color: rgb(161, 213, 253);
+    color: white;
+}
+
+.darkMode .todolistTitle, .darkMode .todosearchDiv, .darkMode .taskItem, .darkMode .noTasks, .darkMode .checkOutWeather, .darkMode .weather{
+    color: #E8A8FF;
+}
+
+
+
