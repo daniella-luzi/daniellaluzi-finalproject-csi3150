@@ -105,7 +105,7 @@ hr{
     font-family: arial;
     color: #330439;
     justify-content: center;
-    margin: auto;
+    margin-right: auto;
 }
 
 /*weather styles*/
@@ -150,6 +150,11 @@ hr{
     font-family: arial;
     color: #330439;
     margin-top: 1.5rem;
+}
+
+.currentWeather{
+    color: #330439;
+
 }
 
 /*to do list styles*/
@@ -326,6 +331,10 @@ ul{
 
     .newsContainer{
         margin-right: 25rem;
+    }
+
+    .noArticles{
+        margin-right: 9rem;
     }
 
 }
