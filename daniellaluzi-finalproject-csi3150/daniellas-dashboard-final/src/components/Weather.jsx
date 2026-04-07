@@ -15,6 +15,7 @@ function Weather() {
             const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search}&units=imperial&APPID=ee0c30e06b473ef5041e43489ad9e8e2`);
 
             const data = await response.json();
+            console.log(data);
 
             if (search.toLowerCase() !== data.name.toLowerCase()) {
                 throw new Error("City not found. Please try again.");

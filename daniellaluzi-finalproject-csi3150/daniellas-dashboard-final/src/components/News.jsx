@@ -14,6 +14,7 @@ function News() {
         const response = await fetch('https://gnews.io/api/v4/top-headlines?lang=en&country=us&apikey=46c632176e234e5f660b272c691dd7b7');
         const data = await response.json();
         setArticles(data.articles || []);
+        console.log(data);
         
       } catch (error) {
         console.error('News fetch failed', error);
