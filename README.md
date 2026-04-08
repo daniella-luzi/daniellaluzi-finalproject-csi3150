@@ -51,7 +51,7 @@ I checked over my mock data file, and I realized that I did not change the key n
 
 I learned about the useEffect hook and how it can be utilized for fetching data from APIs. I also learned more about error handling with a try/catch block. My code tries to fetch the data from gnews.io, and if there’s an error it displays the mock news data instead. The useEffect hook uses a dependency array to ensure that it only renders once. 
 # 3. Demo Video Link
-https://drive.google.com/file/d/1rUB3f8vNmPZUOu2i3PSLp7LBfn6JiptW/view?usp=sharing
+https://drive.google.com/file/d/1qX6Son1ltgt76oEWF9M6EbdwqwFQrFTW/view?usp=sharing
 
 
 
